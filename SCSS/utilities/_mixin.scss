@@ -1,0 +1,30 @@
+@mixin background-color($color) {
+    background-color: $color;
+  }
+  
+  @mixin padding($top, $right: 0, $bottom: 0, $left: 0) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+  
+  @mixin grid-gaps($row-gap, $column-gap) {
+    row-gap: $row-gap;
+    column-gap: $column-gap;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  @mixin box-shadow($shadow) {
+    box-shadow: $shadow;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,0 +1,25 @@
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+    /* Color del texto al posar el cursor */
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row !important;
+        /* Lista horizontal en dispositivos de escritorio */
+    }
+}
+
+.section-below {
+    transition: margin-top 0.3s ease;
+    
+}
+
+.menu-open {
+    margin-top: 220px;
+    
+}

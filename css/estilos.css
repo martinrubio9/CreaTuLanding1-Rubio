@@ -1,0 +1,371 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  /*Reseteo*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos globales*/
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+  padding-top: 77px;
+  /* Altura del encabezado */
+}
+
+h1,
+h2 {
+  font-size: xx-large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+  /* Color del texto al posar el cursor */
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row !important;
+    /* Lista horizontal en dispositivos de escritorio */
+  }
+}
+.section-below {
+  transition: margin-top 0.3s ease;
+}
+
+.menu-open {
+  margin-top: 220px;
+}
+
+footer {
+  background-color: black;
+  height: auto;
+  border-top: 1px black solid;
+  color: white;
+  text-decoration: none;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .my-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.logo {
+  width: 20%;
+}
+
+.icon {
+  width: 24px;
+  padding-top: 15px;
+}
+
+/*Estilos de index*/
+.titulo1 {
+  grid-column: 2/4;
+  grid-row: 2;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.fisher-island-luxury-rentals {
+  display: grid;
+  grid-template-columns: 20px auto auto 20px;
+  grid-template-rows: 20px auto auto auto 20px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.fisher-island-luxury-rentals .imageninteractiva {
+  grid-area: imageninteractiva;
+  grid-column: 2/4;
+  grid-row: 3/5;
+  justify-content: center;
+  align-content: center;
+}
+.fisher-island-luxury-rentals .imageninteractiva .titulo2 {
+  grid-area: titulo2;
+  grid-column: 2/4;
+  grid-row: 6;
+  justify-content: center;
+  align-content: center;
+}
+
+.fisher-island-experiences {
+  background-color: #000;
+  color: white;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 20px;
+}
+.fisher-island-experiences .titulo3 {
+  padding: 10px;
+  font-size: xx-large;
+}
+.fisher-island-experiences .titulo3 #fisherexperiences-paragraph1 {
+  text-align: justify;
+  font-size: large;
+}
+
+.help-form {
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-rows: 20px auto auto 20px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.help-form .titulo4 {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: x-large;
+}
+
+.help-form-paragraph1 {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: large;
+  justify-self: center;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+/* Estilos para el formulario */
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=number] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=submit] {
+  grid-column: span 2; /* El botón ocupará 2 columnas */
+  justify-self: center; /* Centrar el botón horizontalmente */
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor para centrar el formulario */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.titulo1-listyourproperty {
+  padding-top: 15px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 30px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  max-width: 900px; /* Ancho máximo del formulario */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-right: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form-group.text-center {
+  grid-column: 2fr; /* Ocupa dos columnas */
+  text-align: center;
+}
+
+.titulo1-listyourproperty {
+  padding-top: 15px;
+}
+
+.three-keys-section {
+  background-color: #f3f1ef;
+  padding: 40px 0;
+}
+
+.fisher-island-experiences {
+  background-color: #000;
+  color: white;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 30px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  max-width: 800px; /* Ancho máximo del formulario */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-right: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=number],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+}
+
+textarea {
+  grid-column: span 2; /* Ocupa dos columnas */
+}
+
+.form-group.text-center {
+  grid-column: span 2; /* Ocupa dos columnas */
+  text-align: center;
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.titulo1-listyourproperty {
+  padding-top: 15px;
+}
+
+.names-meettheteam {
+  font-size: large;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.custom-carousel-image {
+  width: 75%; /* Ajusta el ancho según tus necesidades */
+  max-width: 800px; /* Máximo ancho para pantallas grandes */
+  margin: 0 auto; /* Centra las imágenes dentro del carrusel */
+  height: auto; /* Mantén la proporción de la imagen */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.titulo1-listyourproperty {
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    border-radius: 10px;
+  }
+  .col-12 {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

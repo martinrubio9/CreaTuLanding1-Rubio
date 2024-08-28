@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  min-height: 100vh; /* Asegurar altura mínima del viewport */
+  flex-direction: column; /* Establecer dirección de flexbox como columna */
+}
+
+footer {
+  background-color: black;
+  height: auto;
+  border-top: 1px solid black;
+  color: white;
+  text-decoration: none;
+  flex-shrink: 0; /* Evitar que el footer se contraiga */
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .my-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
