@@ -20,7 +20,7 @@ function displayDepartments(departments) {
         return;
     }
 
-    container.innerHTML = ''; // Clear the container before displaying departments
+    container.innerHTML = ''; 
 
     departments.forEach((department, index) => {
         const departmentHTML = `
@@ -71,10 +71,10 @@ function applyFilter(departments) {
 
 window.onload = function() {
     fetchDepartments().then(departments => {
-        // Display all departments initially
+        
         displayDepartments(departments);
 
-        // Add event listener for filter change
+        
         document.getElementById('viewFilter').addEventListener('change', function() {
             applyFilter(departments);
         });
